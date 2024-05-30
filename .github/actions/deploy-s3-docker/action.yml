@@ -1,6 +1,6 @@
-name: Deply to S3
+name: Deploy to S3 Docker
 author: MarkJudson
-description: Deploy a static website to an S3 bucket
+description: Deploy a static website to an S3 bucket using Docker
 inputs:
   bucket:
     description: 'The S3 bucket to deploy to'
@@ -16,5 +16,5 @@ outputs:
   website-url:
     description: 'The URL of the deployed website'
 runs:
-  using: 'node20'
-  main: 'main.js'
+  using: 'docker'
+  image: 'Dockerfile'
