@@ -1,0 +1,6 @@
+name: Deply to S3
+author: MarkJudson
+description: Deploy a static website to an S3 bucket
+runs:
+  using: 'node20'
+  main: 'main.js'
