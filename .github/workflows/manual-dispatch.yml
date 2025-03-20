@@ -1,5 +1,8 @@
 name: manual-dispatch
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
     inputs:
       environment:
