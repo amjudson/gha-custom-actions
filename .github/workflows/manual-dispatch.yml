@@ -17,6 +17,11 @@ on:
         required: false
         default: false
         type: boolean
+      version:
+        description: 'Version to deploy'
+        required: false
+        default: '1.0.0'
+        type: string
 jobs:
   print-tag:
     runs-on: ubuntu-latest
